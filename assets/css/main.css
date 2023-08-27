@@ -1,0 +1,287 @@
+/* Reset some default styles for a cleaner look */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;  /* dark background */
+    color: #ffffff;  /* white text */
+}
+
+.intro-text p {
+    font-size: 1.5rem;
+}
+
+.intro-text h1 {
+    font-size: 3rem;
+    margin-top: 0.5rem;
+}
+
+.intro-text h2 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+
+/* About Section */
+.about {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 1.5rem; /* Space between content and button */
+}
+
+.about-image {
+    width: 370px;
+    height: 370px;
+    object-fit: cover;
+    flex: none;
+}
+
+.about-text {
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: calc(100% - 350px - 10rem);
+}
+
+.view-projects-btn {
+    padding: 5px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center; /* This will center the button below the content */
+}
+
+.view-projects-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Projects Section */
+/* Projects Section */
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;  /* Space between individual projects */
+    align-items: center;
+}
+
+.project-info {
+    flex: 1;
+    padding: 1rem;
+    max-width: 50%;  /* Assuming a 2-column layout */
+}
+
+.project h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.project-links {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.project-links a {
+    color: #007BFF;
+    text-decoration: none;
+    margin-right: 0.5rem;  /* Adjust as per need */
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+.project p {
+    margin-bottom: 1rem;
+}
+
+.project ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;  /* Adds some padding to the left of the bullet points */
+}
+
+.project-buttons {
+    display: flex;
+    gap: 1rem;  /* Space between buttons */
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;  /* As we're using 'a' for buttons */
+    text-align: center;
+    display: inline-block;
+}
+
+.see-live {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.source-code {
+    background-color: #6c757d;  /* A grayish tone, adjust as per design preference */
+    color: #fff;
+}
+
+.project-image {
+    flex: 1;
+    max-width: 50%;  /* Adjust based on how much width you want the image to occupy */
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;  /* Optional: to add some rounded corners */
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);  /* Optional: to add some depth */
+}
+
+/* Certification Section  */
+/* Certifications Section */
+.certifications {
+    padding: 2rem;
+    background-color: #ffffff; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.certifications h2 {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.certification-content {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 1.5rem;
+}
+
+.certification-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    width: calc(100% - 250px - 1rem); /* This assumes the image width is 250px, adjust accordingly */
+}
+
+.certification-image img {
+    max-width: 250px; /* adjust based on your image sizes */
+    border-radius: 10px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Contact Section */
+.contact {
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    background-color: #333;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    background-color: #555;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #777;
+}
