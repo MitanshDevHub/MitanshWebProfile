@@ -7,6 +7,8 @@
     <title>Mitansh Chaudhari's Portfolio</title>
     <link rel="stylesheet" media="screen" href="assets/css/main.css">
     <script async src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <!-- Fullscreen Hero Section -->
@@ -15,7 +17,7 @@
             <p>Hello,</p>
             <h1>My name is Mitansh Chaudhari.</h1>
             <h2>I'm a Software Engineer.</h2>
-            <a href="#about" class="btn">About Me</a>
+            <a href="#about" class="next_Section_btn">About Me</a>
         </div>
     </section>
 
@@ -38,7 +40,7 @@
               </p>
           </div>
       </div>
-      <a href="#projects" class="view-projects-btn">View Projects</a>
+      <a href="#projects" class="next_Section_btn">View Projects</a>
     </section>
 
 
@@ -171,16 +173,14 @@
           <a href="https://github.com/CS425-Spring-2023-CourseProject/RealEstate_Management_Application" target="_blank" class="btn source-code">Source Code</a>
       </div>
   </div>
+  <a href="#certifications" class="next_Section_btn">View Certifications</a>
   
   <!-- Right Image Placeholder -->
   <div class="project-image">
       <img src="path_to_your_project_4_image.jpg" alt="Real Estate Management Application Project Image">
   </div>
+
 </div>
-      <!-- Certifications Button -->
-      <div class="certifications-btn-div">
-          <a href="#certifications" class="btn certifications-btn">Certifications</a>
-      </div>
   </section>
 
     <!-- Certifications Section -->
@@ -219,29 +219,59 @@
               <img src="assets/images/Aglie_JPMC.png" alt="Certificate for Agile Virtual Experience Program">
           </div>
       </div>
+      <a href="#connect" class="next_Section_btn">Get in touch</a>
       
   </section>
-  
-      <a href="#contact" class="btn">Get in touch</a>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>Want to get in touch? Reach out to me through the form below or follow me on my social channels.</p>
-        <form action="path-to-your-server-script" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+  <!-- Connect Section -->
+  <section id="connect">
+    <h2>Let's Connect</h2>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+    <div class="connect-content">
+        <!-- Left Column: Statement and Quick Contact Links -->
+        <div class="connect-left">
+          <h3>Why Connect?</h3> <!-- New subtitle -->
+          
+          <p>Whether you're intrigued by one of my projects, considering me for a role, or just looking to chat about technology and innovations, I'm always here. Having ventured through varied tech landscapes and collaborated with inspiring professionals, I deeply value genuine connections. Every message isn't just an email—it's an opportunity and a story waiting to unfold. Let's make something great together!</p>
+      
+          <div class="icon-group">
+            <a href="mailto:mitansh46@gmail.com" class="icon-link email-link" title="Send me an Email!">
+              <img src="assets/images/icon1.gif" alt="Email Icon" class="contact-icon">
+          </a><a href="https://www.linkedin.com/in/your-profile/" class="icon-link linkedin-link" title="Visit my LinkedIn!">
+              <img src="assets/images/icon2.gif" alt="LinkedIn Icon" class="contact-icon">
+          </a>
+        </div>
+      </div>      
+        <!-- Right Column: Contact Form -->
+        <div class="contact-form">
+            <h4>Get in Touch</h4>
+            <form action="#" method="post">
+                <label for="purpose">Purpose of Contact:</label>
+                <select id="purpose" name="purpose">
+                    <option value="feedback">Feedback/Suggestion</option>
+                    <option value="collaboration">Collaboration Opportunity</option>
+                    <option value="hiring">Hiring for a Role</option>
+                    <option value="query">General Query</option>
+                </select><br>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
 
-            <input type="submit" value="Send Message">
-        </form>
-    </section>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br>
+
+                <input type="submit" value="Send a Message" class="submit-btn">
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+
 </body>
 
 </html>

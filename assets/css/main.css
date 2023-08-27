@@ -39,6 +39,22 @@ body {
     margin-top: 0.5rem;
 }
 
+/* Next Section Button   */
+.next_Section_btn {
+    padding: 5px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center; /* This will center the button below the content */
+}
+
+.next_Section_btn:hover {
+    background-color: #0056b3;
+}
+
 
 /* About Section */
 .about {
@@ -82,21 +98,6 @@ body {
     padding: 1.5rem;
     border-radius: 10px;
     max-width: calc(100% - 350px - 10rem);
-}
-
-.view-projects-btn {
-    padding: 5px 15px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    align-self: center; /* This will center the button below the content */
-}
-
-.view-projects-btn:hover {
-    background-color: #0056b3;
 }
 
 
@@ -224,64 +225,139 @@ body {
 }
 
 
-
-/* Contact Section */
-.contact {
-    padding: 2rem;
-    background-color: #ffffff;
+/* CONNECT SECTION */
+/* General Styles */
+#connect {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Arial', sans-serif;
 }
 
-.contact h2 {
-    margin-bottom: 1rem;
+#connect h2, #connect h4 {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-form {
-    margin-top: 1rem;
+.connect-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Gap between cards */
 }
 
-label {
-    display: block;
-    margin-bottom: 0.5rem;
+/* Card Styles */
+.connect-left, .contact-form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    box-sizing: border-box;
+    width: 48%; /* Makes sure the cards take up equal width, with a little space for gap */
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+.connect-left:hover, .contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
-input[type="submit"] {
-    display: inline-block;
-    background-color: #333;
-    color: #ffffff;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+/* Left Column: Statement and Quick Contact Links */
+.connect-left h3 {
+    font-size: 24px; /* Adjust according to preference */
+    margin-bottom: 20px; /* Spacing below the title */
+    font-weight: bold;
+    text-align: center;
 }
 
-input[type="submit"]:hover {
-    background-color: #555;
+.connect-left p {
+    font-size: 18px;  /* Bigger font size for the paragraph */
+    margin-bottom: 30px;  /* More margin for better spacing */
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    color: #ffffff;
-    background-color: #555;
-    border: none;
-    border-radius: 4px;
+.connect-left {
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Centers children vertically */
+    align-items: center; /* Centers children horizontally */
+    text-align: center; /* For centering the text */
+}
+
+.icon-group {
+    display: flex;
+    justify-content: center; /* Centers icons horizontally */
+    gap:100px; /* Provides space between icons */
+}
+
+.email-link .contact-icon {
+    width: 140px;
+    height: 140px;
+}
+
+.linkedin-link .contact-icon {
+    width: 140px;  /* Adjust if LinkedIn icon appears bigger */
+    height: 140px;
+}
+
+/* Adjust spacing between icons */
+.icon-link {
+    margin-right: 10px;  /* Adjust to your preference */
+}
+
+.icon-link:last-child {
+    margin-right: 0;  /* Ensuring the last icon doesn't have extra margin */
+}
+
+.connect-left a {
+    color: #0077b5;
     text-decoration: none;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
+    transition: color 0.2s;
 }
 
-.btn:hover {
-    background-color: #777;
+.connect-left a:hover {
+    color: #005c99;
 }
+
+.label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Contact Form Styles */
+.contact-form select, 
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 0 5px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.contact-form select:hover, 
+.contact-form input:hover, 
+.contact-form textarea:hover,
+.contact-form select:focus, 
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    box-shadow: 0 0 5px rgba(0,0,0,0.12);
+    border-color: #0077b5;
+}
+
+.submit-btn {
+    background-color: #0077b5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #005c99;
+}
+
+
+
